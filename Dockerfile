@@ -15,3 +15,4 @@ RUN git clone https://git-wip-us.apache.org/repos/asf/lucy.git /tmp/lucy\
   && ./install.sh --prefix /usr\
   && cd /\
   && rm -rf /tmp/lucy
+ONBUILD ENV CGO_LDFLAGS -llucy -lcfish
