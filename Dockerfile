@@ -1,4 +1,4 @@
-FROM google/golang
+FROM google/golang:1.3.1
 MAINTAINER Philip Southam <philip@eml.cc>
 RUN git clone https://git-wip-us.apache.org/repos/asf/lucy.git /tmp/lucy\
   && cd /tmp/lucy\
